@@ -1,0 +1,247 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+
+
+body{
+    margin: 0;
+    background-color: rgb(25, 25, 25);
+    color: lightgray;
+    font-family: "Caveat Brush", cursive;
+}
+
+header{
+    background-color: rgb(50, 50,50);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.logo{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+
+footer{
+    background-color: rgb(50, 50,50);
+    text-align: center;
+    padding: 8px;
+    
+}
+/*code important pour mettre un div au centre de la page*/
+/*margin:16 20% + justify-content: space-evenly let this container look centered like that*/
+
+.container{
+    margin: 16px 20%;
+    padding: 0px;
+    background-color: rgb(50, 50,50);
+    border-radius: 8px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons button{
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: rgb(252, 227, 0);
+    border: none;
+    color: rgb(71, 71, 71);
+    font-size: large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 70%;
+ 
+}
+
+label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+input{
+    width: 50%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    margin: 8px 0;
+}
+
+.logandsign{
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: rgb(252, 227, 0);
+    border: none;
+    color: rgb(71, 71, 71);
+    font-size: large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.disconnect {
+    display: block;
+    background-color: rgb(100, 100, 100);
+    max-width: 60%;
+    margin: auto;
+    
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    color: #EC5252;
+    border-radius: 8px;
+}
+
+.post-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+ 
+}
+
+.post-head, .post-infos{
+    flex-grow: 1;
+}
+
+.post-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.post-infos h4{
+    color: rgb(252, 227, 0);
+    margin: 0;
+}
+.post-infos h6{
+    margin: 4px;
+}
+
+.inverted-colors{
+    max-height: 20px;
+    filter: invert(75%);
+    margin-top: 15px;
+}
+.post-image{
+    width: 100%;
+}
+.reactions{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+.likes{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 8px;
+}
+
+.likes img{
+    max-height: 24px;
+}
+
+.post-button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.post-button img{
+    height: 32px;
+    filter: invert(75%);
+}
+
+.post-button:hover{
+    background-color: rgb(100, 100, 100);
+    border-radius: 14px;
+}
+
+.button-stack{
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        margin: 12px 7%;
+        padding: 0px;
+        background-color: rgb(50, 50,50);
+        border-radius: 8px;
+    }
+
+    form {
+        width: 90%; /* Make the form take more space on small screens */
+        margin: 0 auto; /* Center the form */
+    }
+
+    label {
+        flex-direction: column; /* Stack label and input vertically */
+        align-items: flex-start;
+        margin: 0 10px;
+    }
+
+    input {
+        width: 90%; /* Make inputs full width */
+        padding: 10px;
+        font-size: 16px; /* Make text easier to read */
+    }
+
+    .logandsign{
+        margin-left: 20px;
+        padding: 8px;
+    }
+}
+
+/*post*/
+
+.new-post-top{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 12px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    form {
+        width: 80%; /* Slightly wider form for tablets */
+       
+    }
+
+    label {
+        flex-direction: row; /* Keep labels and inputs in one line */
+        justify-content: space-between;
+     
+        margin: 10px 0;
+    }
+
+    input {
+        width: 60%; /* Slightly wider input fields */
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
